@@ -1,0 +1,82 @@
+:root{
+  --color-primary: rgba(39, 174, 96, 1);
+  --color-primary-50:  rgba(147, 215, 175, 1);
+  --color-secondary: rgba(235, 87, 87, 1);
+
+  /* grey scale palets */
+
+  --gray-100:rgba(51, 51, 51, 1);
+  --gray-50: rgba(130, 130, 130, 1);
+  --gray-20:rgba(224, 224, 224, 1);
+  --gray-0: rgba(245, 245, 245, 1);
+
+
+  /* feedback */
+
+  --negative: #E60000;
+  --warning: #FFCD07;
+  --sucess:#168821;
+  --information: #155BCB;
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  border: none;
+  outline: unset;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Inter', sans-serif;
+}
+
+body,html{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+button{
+  width: 107px;
+  height: 40px;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  color: var(--gray-0);
+  border-radius: 8px;
+  cursor:pointer;
+  transition: 1s;
+  
+}
+
+button:hover{
+  transition: 1s;
+  animation: pulse 1s;
+  animation-iteration-count: infinite;
+  background-color: var(--color-primary-50);
+  border: 2px solid var(--color-primary-50);
+}
+
+/*** SCROLLBAR ***/
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(163, 154, 154); 
+  border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-50);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sucess);
+}

@@ -1,0 +1,24 @@
+
+
+.App {
+  width: 100vw;
+  height: 100vh; 
+}
+
+
+.container{
+  width: 100vw;  
+  display: flex;  
+  justify-content: space-around;  
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 20px 0px;
+  column-gap:5px;
+}
+
+@media screen and (min-width: 1118px) {
+  .container{
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,35 @@
+
+.loadingList{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.productList {   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    row-gap: 12px;
+    column-gap: 20px;
+
+    width: 100%;
+    max-width: 818px;
+    height: 360px;
+   
+    padding: 10px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1123px) {
+    .productList {
+        height: 100%;
+        flex-direction: row;
+        overflow-y: hidden;
+        
+    }
+}
+    
+.remove{
+    display: none;
+}
